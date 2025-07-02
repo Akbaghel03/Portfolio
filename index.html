@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwani Kumar Baghel | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <span class="nav-logo">Ashwani</span>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/profile.jpg" alt="Ashwani Kumar Baghel" class="profile-photo">
+        <div class="hero-content">
+            <h1>Ashwani Kumar Baghel</h1>
+            <p class="hero-intro">Final Year @IIIT Nagpur | Tech Enthusiast | Machine Learning | Gen AI | Specialist
+                @Codeforces </p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>I am Ashwani Kumar Baghel, a B.Tech student in ECE with a specialization in Internet of Things from IIIT
+            Nagpur. I have a passion for technology, problem-solving, and innovation, reflected in my various projects
+            and achievements.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Multi-Agent AI Workflow System</h3>
+                <p><strong>Tech Stack:</strong> Python, Redis, PyPDF2, Email Parser, JSON, LLM-ready</p>
+                <p>Designed and implemented a modular multi-agent system that:</p>
+                <ul>
+                    <li>Classifies input formats (PDF, JSON, Email) and detects intent (Invoice, RFQ, Complaint, etc.)
+                        via a central Classifier Agent.</li>
+                    <li>Dynamically routes inputs to specialized agents for extraction, validation, and CRM-style
+                        formatting.</li>
+                    <li>Maintains shared memory using Redis, enabling traceability and context across agent
+                        interactions.</li>
+                    <li>Built with extensibility for future LLM integration and real-time orchestration.</li>
+                    <li>Includes sample files, logs, and a full video demo walkthrough.</li>
+                </ul>
+                <p><strong>Use Cases:</strong> Workflow automation, intelligent CRM pipelines, document triaging,
+                    chatbot backends.</p>
+            </div>
+            <div class="project-card">
+                <h3>E-commerce Fashion Chatbot</h3>
+                <p><strong>Tech Stack:</strong> LangChain, OpenAI GPT-3.5, Redis Vector DB, Chainlit, Python</p>
+                <p>Designed and deployed a Generative AI-powered fashion assistant that provides personalized outfit
+                    recommendations using Retrieval-Augmented Generation (RAG).</p>
+                <ul>
+                    <li>Embedded product data using OpenAI Embeddings and indexed it in Redis with HNSW for hybrid
+                        semantic search.</li>
+                    <li>Built a custom LangChain pipeline with context compression and prompt tuning to ground LLM
+                        responses in retrieved data.</li>
+                    <li>Integrated Chainlit for a real-time chat interface with streaming GPT responses.</li>
+                    <li>Optimized latency and token usage to simulate production-ready AI assistant behavior.</li>
+                </ul>
+                <p>Project focused on real-world GenAI challenges like hallucination control, multi-turn query handling,
+                    and domain-specific prompting.</p>
+            </div>
+            <div class="project-card">
+                <h3>PiVoice GPT Assistant</h3>
+                <p>Created a voice-activated assistant on Raspberry Pi using Python, OpenAI API, SpeechRecognition,
+                    Pyttsx3, and gTTS for real-time conversational interactions.</p>
+            </div>
+            <div class="project-card">
+                <h3>COVID-19 Data Analysis</h3>
+                <p>Analyzed COVID-19 data with Python, Pandas, Matplotlib, and machine learning models (Linear
+                    Regression, SVR, ARIMA, SARIMA) to predict trends and visualize insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>C/C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>Langchain</li>
+            <li>OpenCV</li>
+            <li>Pandas</li>
+            <li>NumPy </li>
+            <li>Matplotlib </li>
+            <li>PyTorch</li>
+            <li>DSA </li>
+            <li>Machine Learning</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Public Speaking</li>
+            <li>Team Collaboration</li>
+        </ul>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="card">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Grand Finalist - Innovation Oasis Challenge (Pitched Learnpreneur, a website connecting freelancers,
+                students, and mentors)</li>
+            <li>Codeforces Specialist | Max Rating: 1485 | ID: rangey_bhakt</li>
+            <li>Solved 400+ DSA questions across GFG, LeetCode, etc.</li>
+            <li>Certifications: Communication, Python</li>
+        </ul>
+    </section>
+
+    <!-- Volunteering Section -->
+    <section id="volunteering" class="card">
+        <h2>Volunteering</h2>
+        <ul>
+            <li>Core Member, IOTICS club - IIIT Nagpur</li>
+            <li>Member, Pahal Committee - IIIT Nagpur (social welfare for rural children)</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ashwork1010@gmail.com">ashwork1010@gmail.com</a></p>
+        <p>Phone: +91 7067525930</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ashwani-baghel">ashwani-baghel</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ashwani Kumar Baghel</p>
+    </footer>
+</body>
+
+</html>
