@@ -6,56 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwani Kumar Baghel | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav>
+    <nav class="glass-nav">
         <div class="nav-container">
-            <span class="nav-logo">Ashwani</span>
+            <span class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Ashwani</span>
+            </span>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">
                 <span></span>
             </label>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#volunteering">Volunteering</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-rocket"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+                <li><a href="#volunteering"><i class="fas fa-heart"></i> Volunteering</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="images/profile.jpg" alt="Ashwani Kumar Baghel" class="profile-photo">
-        <div class="hero-content">
-            <h1>Ashwani Kumar Baghel</h1>
-            <p class="hero-intro">Final Year @IIIT Nagpur | Tech Enthusiast | Machine Learning | Gen AI | Specialist
-                @Codeforces </p>
-            <a href="#projects" class="cta-btn">View My Work</a>
+        <div class="hero-container">
+            <div class="profile-container">
+                <div class="profile-frame">
+                    <img src="images/profile.jpg" alt="Ashwani Kumar Baghel" class="profile-photo">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Ashwani Kumar Baghel</span>
+                </h1>
+                <p class="hero-intro">
+                    <i class="fas fa-graduation-cap"></i>
+                    Final Year @IIIT Nagpur | Tech Enthusiast | Machine Learning | Gen AI | Specialist @Codeforces
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">400+</span>
+                        <span class="stat-label">DSA Solved</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1485</span>
+                        <span class="stat-label">Codeforces Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="cta-btn primary">
+                        <i class="fas fa-rocket"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="cta-btn secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>I am Ashwani Kumar Baghel, a B.Tech student in ECE with a specialization in Internet of Things from IIIT
-            Nagpur. I have a passion for technology, problem-solving, and innovation, reflected in my various projects
-            and achievements.</p>
+    <section id="about" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am Ashwani Kumar Baghel, a B.Tech student in ECE with a specialization in Internet of Things from
+                    IIIT Nagpur. I have a passion for technology, problem-solving, and innovation, reflected in my
+                    various projects and achievements.</p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML Enthusiast</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-code"></i>
+                        <span>Problem Solver</span>
+                    </div>
+                    <div class="highlight">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Innovation Driven</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="card">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-card">
-                <h3>Multi-Agent AI Workflow System</h3>
-                <p><strong>Tech Stack:</strong> Python, Redis, PyPDF2, Email Parser, JSON, LLM-ready</p>
+    <section id="projects" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-rocket"></i> Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="project-grid">
+            <div class="project-card glass-card">
+                <div class="project-header">
+                    <h3>Multi-Agent AI Workflow System</h3>
+                    <div class="project-badge">AI/ML</div>
+                </div>
+                <p class="project-tech"><strong>Tech Stack:</strong> Python, Redis, PyPDF2, Email Parser, JSON,
+                    LLM-ready</p>
                 <p>Designed and implemented a modular multi-agent system that:</p>
-                <ul>
+                <ul class="project-features">
                     <li>Classifies input formats (PDF, JSON, Email) and detects intent (Invoice, RFQ, Complaint, etc.)
                         via a central Classifier Agent.</li>
                     <li>Dynamically routes inputs to specialized agents for extraction, validation, and CRM-style
@@ -67,13 +150,24 @@
                 </ul>
                 <p><strong>Use Cases:</strong> Workflow automation, intelligent CRM pipelines, document triaging,
                     chatbot backends.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Demo
+                    </a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>E-commerce Fashion Chatbot</h3>
-                <p><strong>Tech Stack:</strong> LangChain, OpenAI GPT-3.5, Redis Vector DB, Chainlit, Python</p>
+
+            <div class="project-card glass-card">
+                <div class="project-header">
+                    <h3>E-commerce Fashion Chatbot</h3>
+                    <div class="project-badge">GenAI</div>
+                </div>
+                <p class="project-tech"><strong>Tech Stack:</strong> LangChain, OpenAI GPT-3.5, Redis Vector DB,
+                    Chainlit, Python</p>
                 <p>Designed and deployed a Generative AI-powered fashion assistant that provides personalized outfit
                     recommendations using Retrieval-Augmented Generation (RAG).</p>
-                <ul>
+                <ul class="project-features">
                     <li>Embedded product data using OpenAI Embeddings and indexed it in Redis with HNSW for hybrid
                         semantic search.</li>
                     <li>Built a custom LangChain pipeline with context compression and prompt tuning to ground LLM
@@ -83,77 +177,288 @@
                 </ul>
                 <p>Project focused on real-world GenAI challenges like hallucination control, multi-turn query handling,
                     and domain-specific prompting.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Demo
+                    </a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>PiVoice GPT Assistant</h3>
+
+            <div class="project-card glass-card">
+                <div class="project-header">
+                    <h3>PiVoice GPT Assistant</h3>
+                    <div class="project-badge">IoT</div>
+                </div>
                 <p>Created a voice-activated assistant on Raspberry Pi using Python, OpenAI API, SpeechRecognition,
                     Pyttsx3, and gTTS for real-time conversational interactions.</p>
+                <div class="project-links">
+                    <a href="#" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                        View Demo
+                    </a>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>COVID-19 Data Analysis</h3>
-                <p>Analyzed COVID-19 data with Python, Pandas, Matplotlib, and machine learning models (Linear
-                    Regression, SVR, ARIMA, SARIMA) to predict trends and visualize insights.</p>
+
+            <div class="project-card glass-card">
+                <div class="project-header">
+                    <h3>COVID-19 Data Analysis</h3>
+                    <div class="project-badge">Data Science</div>
+                </div>
+                <p class="project-tech"><strong>Tech Stack:</strong> Python, Pandas, Matplotlib, Jupyter Notebook,
+                    Machine Learning, Time Series Forecasting</p>
+                <p>Comprehensive analysis of COVID-19 pandemic data with advanced visualizations and predictive
+                    modeling:</p>
+                <ul class="project-features">
+                    <li>Analyzed global COVID-19 datasets including confirmed cases, deaths, and recovery rates across
+                        multiple countries</li>
+                    <li>Implemented time series forecasting models (ARIMA, SARIMA) to predict COVID-19 trends and spread
+                        patterns</li>
+                    <li>Created interactive visualizations showing the impact of coronavirus worldwide and country-wise
+                        comparisons</li>
+                    <li>Applied machine learning algorithms (Linear Regression, SVR) for case prediction and trend
+                        analysis</li>
+                    <li>Focused on India-specific analysis with detailed regional data and coordinate mapping</li>
+                    <li>Built comprehensive dashboard with multiple datasets for real-time pandemic monitoring</li>
+                </ul>
+                <p><strong>Key Insights:</strong> Global pandemic impact analysis, predictive modeling for public
+                    health, data-driven insights for policy decisions</p>
+                <div class="project-links">
+                    <a href="https://github.com/Akbaghel03/Covid-19-Data-Analysis" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="card">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>C/C++</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Git</li>
-            <li>Langchain</li>
-            <li>OpenCV</li>
-            <li>Pandas</li>
-            <li>NumPy </li>
-            <li>Matplotlib </li>
-            <li>PyTorch</li>
-            <li>DSA </li>
-            <li>Machine Learning</li>
-            <li>SQL</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Public Speaking</li>
-            <li>Team Collaboration</li>
-        </ul>
+    <section id="skills" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Python">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item" data-skill="C/C++">
+                        <i class="fas fa-code"></i>
+                        <span>C/C++</span>
+                    </div>
+                    <div class="skill-item" data-skill="HTML">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-item" data-skill="CSS">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>AI & Machine Learning</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Langchain">
+                        <i class="fas fa-robot"></i>
+                        <span>Langchain</span>
+                    </div>
+                    <div class="skill-item" data-skill="OpenCV">
+                        <i class="fas fa-eye"></i>
+                        <span>OpenCV</span>
+                    </div>
+                    <div class="skill-item" data-skill="Pandas">
+                        <i class="fas fa-table"></i>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="skill-item" data-skill="NumPy">
+                        <i class="fas fa-calculator"></i>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="skill-item" data-skill="Matplotlib">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="skill-item" data-skill="PyTorch">
+                        <i class="fas fa-fire"></i>
+                        <span>PyTorch</span>
+                    </div>
+                    <div class="skill-item" data-skill="Machine Learning">
+                        <i class="fas fa-brain"></i>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Databases & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="Git">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-item" data-skill="SQL">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-item" data-skill="MongoDB">
+                        <i class="fas fa-leaf"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-item" data-skill="MySQL">
+                        <i class="fas fa-server"></i>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-skill="DSA">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>DSA</span>
+                    </div>
+                    <div class="skill-item" data-skill="Public Speaking">
+                        <i class="fas fa-microphone"></i>
+                        <span>Public Speaking</span>
+                    </div>
+                    <div class="skill-item" data-skill="Team Collaboration">
+                        <i class="fas fa-users"></i>
+                        <span>Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="card">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Grand Finalist - Innovation Oasis Challenge (Pitched Learnpreneur, a website connecting freelancers,
-                students, and mentors)</li>
-            <li>Codeforces Specialist | Max Rating: 1485 | ID: rangey_bhakt</li>
-            <li>Solved 400+ DSA questions across GFG, LeetCode, etc.</li>
-            <li>Certifications: Communication, Python</li>
-        </ul>
+    <section id="achievements" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-trophy"></i> Achievements</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h3>Grand Finalist</h3>
+                <p>Innovation Oasis Challenge - Pitched Learnpreneur, a website connecting freelancers, students, and
+                    mentors</p>
+            </div>
+
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Codeforces Specialist</h3>
+                <p>Max Rating: <span class="highlight-text">1485</span> | ID: rangey_bhakt</p>
+            </div>
+
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>400+ DSA Questions</h3>
+                <p>Solved across GFG, LeetCode, and other platforms</p>
+            </div>
+
+            <div class="achievement-card glass-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Certifications</h3>
+                <p>Communication, Python, and various technical skills</p>
+            </div>
+        </div>
     </section>
 
     <!-- Volunteering Section -->
-    <section id="volunteering" class="card">
-        <h2>Volunteering</h2>
-        <ul>
-            <li>Core Member, IOTICS club - IIIT Nagpur</li>
-            <li>Member, Pahal Committee - IIIT Nagpur (social welfare for rural children)</li>
-        </ul>
+    <section id="volunteering" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-heart"></i> Volunteering</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="volunteering-content">
+            <div class="volunteering-item glass-card">
+                <div class="volunteering-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="volunteering-text">
+                    <h3>Core Member, IOTICS club</h3>
+                    <p>IIIT Nagpur - Contributing to IoT innovation and community building</p>
+                </div>
+            </div>
+
+            <div class="volunteering-item glass-card">
+                <div class="volunteering-icon">
+                    <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="volunteering-text">
+                    <h3>Member, Pahal Committee</h3>
+                    <p>IIIT Nagpur - Social welfare for rural children and community development</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ashwork1010@gmail.com">ashwork1010@gmail.com</a></p>
-        <p>Phone: +91 7067525930</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ashwani-baghel">ashwani-baghel</a></p>
+    <section id="contact" class="section-card glass-card">
+        <div class="section-header">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-item glass-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <a href="mailto:ashwork1010@gmail.com">ashwork1010@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="contact-item glass-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <a href="tel:+917067525930">+91 7067525930</a>
+                </div>
+            </div>
+
+            <div class="contact-item glass-card">
+                <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>LinkedIn</h3>
+                    <a href="https://linkedin.com/in/ashwani-baghel" target="_blank">ashwani-baghel</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Ashwani Kumar Baghel</p>
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-code"></i>
+                <span>Ashwani Kumar Baghel</span>
+            </div>
+            <p>&copy; 2024 - Built with ❤️ and modern tech</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
